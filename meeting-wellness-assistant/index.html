@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindfulMeet - AI Meeting Wellness Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <h1>MindfulMeet</h1>
+            </div>
+            <p class="tagline">AI-Powered Meeting Wellness Assistant</p>
+        </header>
+
+        <main class="main-content">
+            <div class="hero-section">
+                <h2>Combat AI-Induced Burnout with Intelligent Meeting Management</h2>
+                <p>While AI boosts productivity by 40%, it's also causing unprecedented burnout. MindfulMeet helps you harness AI's power while protecting your mental wellness.</p>
+            </div>
+
+            <div class="dashboard">
+                <div class="card wellness-score">
+                    <h3><i class="fas fa-heart-pulse"></i> Wellness Score</h3>
+                    <div class="score-display">
+                        <div class="score-circle" id="wellnessScore">85</div>
+                        <div class="score-label">Good</div>
+                    </div>
+                    <p>Based on your meeting patterns and AI usage</p>
+                </div>
+
+                <div class="card meeting-analysis">
+                    <h3><i class="fas fa-chart-line"></i> Today's Analysis</h3>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Meetings</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.5h</span>
+                            <span class="stat-label">Meeting Time</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">AI Tools Used</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card burnout-risk">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Burnout Risk</h3>
+                    <div class="risk-meter">
+                        <div class="risk-bar">
+                            <div class="risk-fill" style="width: 35%;"></div>
+                        </div>
+                        <span class="risk-level">Moderate</span>
+                    </div>
+                    <p>Consider scheduling a 15-minute break</p>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <h3>Smart Recommendations</h3>
+                <div class="recommendations">
+                    <div class="recommendation">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Schedule Buffer Time</h4>
+                            <p>Add 10-minute buffers between meetings to prevent fatigue</p>
+                            <button class="btn-apply">Apply</button>
+                        </div>
+                    </div>
+                    <div class="recommendation">
+                        <i class="fas fa-pause"></i>
+                        <div>
+                            <h4>Mindful Break</h4>
+                            <p>Take a 5-minute breathing exercise before your next meeting</p>
+                            <button class="btn-apply">Start</button>
+                        </div>
+                    </div>
+                    <div class="recommendation">
+                        <i class="fas fa-robot"></i>
+                        <div>
+                            <h4>AI Usage Limit</h4>
+                            <p>You've used AI tools for 3 hours today. Consider a tech break</p>
+                            <button class="btn-apply">Set Reminder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calendar-section">
+                <h3>Smart Calendar View</h3>
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button class="nav-btn" id="prevDay"><i class="fas fa-chevron-left"></i></button>
+                        <h4 id="currentDate">Today - November 22, 2024</h4>
+                        <button class="nav-btn" id="nextDay"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="calendar-timeline">
+                        <div class="time-slot">
+                            <span class="time">9:00 AM</span>
+                            <div class="meeting high-stress">Team Standup <span class="stress-indicator">⚠️</span></div>
+                        </div>
+                        <div class="time-slot">
+                            <span class="time">10:00 AM</span>
+                            <div class="meeting medium-stress">Client Review <span class="ai-tag">AI</span></div>
+                        </div>
+                        <div class="time-slot">
+                            <span class="time">11:00 AM</span>
+                            <div class="break-suggestion">💡 Suggested: 15-min mindful break</div>
+                        </div>
+                        <div class="time-slot">
+                            <span class="time">11:30 AM</span>
+                            <div class="meeting low-stress">1:1 with Sarah</div>
+                        </div>
+                        <div class="time-slot">
+                            <span class="time">2:00 PM</span>
+                            <div class="meeting high-stress">Board Presentation <span class="ai-tag">AI</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wellness-tools">
+                <h3>Wellness Tools</h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Breathing Exercise</h4>
+                        <p>2-minute guided breathing</p>
+                        <button class="btn-tool">Start</button>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fas fa-eye"></i>
+                        <h4>Eye Rest</h4>
+                        <p>20-20-20 rule reminder</p>
+                        <button class="btn-tool">Enable</button>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>AI Usage Tracker</h4>
+                        <p>Monitor AI tool usage</p>
+                        <button class="btn-tool">View</button>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fas fa-moon"></i>
+                        <h4>Focus Mode</h4>
+                        <p>Block distracting notifications</p>
+                        <button class="btn-tool">Activate</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 MindfulMeet - Combating AI-induced burnout, one meeting at a time</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
