@@ -1,0 +1,515 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.logo i {
+    font-size: 2.5rem;
+    color: #ffd700;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Main Content */
+.main-content {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border-radius: 15px;
+    color: white;
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Dashboard Cards */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: #f8fafc;
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #4a5568;
+    font-size: 1.2rem;
+}
+
+.card h3 i {
+    color: #667eea;
+}
+
+/* Wellness Score */
+.score-display {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.score-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto 10px;
+    box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+}
+
+.score-label {
+    font-weight: 600;
+    color: #4a5568;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.stat {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+/* Risk Meter */
+.risk-meter {
+    margin-bottom: 15px;
+}
+
+.risk-bar {
+    width: 100%;
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.risk-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #48bb78 0%, #ed8936 50%, #f56565 100%);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.risk-level {
+    font-weight: 600;
+    color: #ed8936;
+}
+
+/* Recommendations */
+.features-section {
+    margin-bottom: 40px;
+}
+
+.features-section h3 {
+    margin-bottom: 25px;
+    color: #2d3748;
+    font-size: 1.5rem;
+}
+
+.recommendations {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.recommendation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f7fafc;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+    transition: background 0.3s ease;
+}
+
+.recommendation:hover {
+    background: #edf2f7;
+}
+
+.recommendation i {
+    font-size: 1.5rem;
+    color: #667eea;
+    min-width: 30px;
+}
+
+.recommendation div {
+    flex: 1;
+}
+
+.recommendation h4 {
+    margin-bottom: 5px;
+    color: #2d3748;
+}
+
+.recommendation p {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.btn-apply {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.btn-apply:hover {
+    background: #5a67d8;
+}
+
+/* Calendar Section */
+.calendar-section {
+    margin-bottom: 40px;
+}
+
+.calendar-section h3 {
+    margin-bottom: 25px;
+    color: #2d3748;
+    font-size: 1.5rem;
+}
+
+.calendar-container {
+    background: #f8fafc;
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.nav-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #5a67d8;
+}
+
+.calendar-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.time-slot {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.time {
+    min-width: 80px;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.meeting {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meeting.high-stress {
+    background: #fed7d7;
+    color: #c53030;
+    border-left: 4px solid #f56565;
+}
+
+.meeting.medium-stress {
+    background: #feebc8;
+    color: #c05621;
+    border-left: 4px solid #ed8936;
+}
+
+.meeting.low-stress {
+    background: #c6f6d5;
+    color: #22543d;
+    border-left: 4px solid #48bb78;
+}
+
+.break-suggestion {
+    flex: 1;
+    padding: 12px 16px;
+    background: #e6fffa;
+    color: #234e52;
+    border-radius: 8px;
+    border-left: 4px solid #38b2ac;
+    font-style: italic;
+}
+
+.ai-tag {
+    background: #667eea;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.stress-indicator {
+    font-size: 1.2rem;
+}
+
+/* Wellness Tools */
+.wellness-tools h3 {
+    margin-bottom: 25px;
+    color: #2d3748;
+    font-size: 1.5rem;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tool-card {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tool-card i {
+    font-size: 2rem;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.tool-card h4 {
+    margin-bottom: 10px;
+    color: #2d3748;
+}
+
+.tool-card p {
+    color: #718096;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.btn-tool {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.btn-tool:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .main-content {
+        padding: 25px;
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .recommendation {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .calendar-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .time-slot {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation for wellness score */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.score-circle {
+    animation: pulse 2s infinite;
+}
+
+/* Smooth transitions */
+* {
+    transition: all 0.3s ease;
+}
